@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Write me LOGIN</h1>
+    <form action="https://webdev-youtube.github.io/gannu-adventures/" method="post">
+        <label for="name_surname"><b>Name and Surname</b></label>
+        <input type="text" id="name_surname" name="name_surname" placeholder="Doge Doggy" required>
+        <br><br>
+        <label for="email"><b>Email ID</b></label>
+        <input type="email" id="email" name="email" placeholder="someone@gmail.com" required>
+        <select name="email_provider">
+            <option value="gmail">Gmail</option>
+            <option value="outlook">Outlook</option>
+            <option value="yahoo">Yahoo</option>
+            <option value="rediffmail">Rediffmail</option>
+            <option value="hotmail">Hotmail</option>
+            <option value="icloud">iCloud Mail</option>
+        </select>
+        <br><br>
+        <label for="password"><b>Password</b></label>
+        <input type="password" id="password" name="password" placeholder="Dog@123" required>
+        <br><br>
+        <label for="dob"><b>Date of Birth</b></label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
